@@ -12,4 +12,12 @@
     </div>
     {% endfor %}
 
+    {% for empl in staff %}
+    <div class="blog-empl">
+        <p class="blog-empl-meta">published: {{ empl.published_date }}</p>
+        <h2><a href="{% url 'empl_detail' pk=empl.pk %}" class="blog-empl-name">{{ empl.name }}</a></h2>
+        <p>{{ empl.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
+
 {% endblock %}

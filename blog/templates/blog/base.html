@@ -31,7 +31,7 @@
   <div class="blog-masthead">
     <div class="container">
       <nav class="blog-nav">
-        <a class="blog-nav-item active" href="#">Home</a>
+        <a class="blog-nav-item active" href="{% url 'post_list' %}">Home</a>
         <a class="blog-nav-item" href="#">New features</a>
         <a class="blog-nav-item" href="#">Press</a>
         <a class="blog-nav-item" href="#">New hires</a>
@@ -51,16 +51,7 @@
         {% block content %}
         {% endblock %}
         <!-- /.blog-post -->
-        <nav>
-          <ul class="pager">
-            <li>
-              <a href="#">Previous</a>
-            </li>
-            <li>
-              <a href="#">Next</a>
-            </li>
-          </ul>
-        </nav>
+
       </div>
       <!-- /.blog-main -->
       <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
